@@ -2,8 +2,10 @@ package boardgame;
 
 public class Position {
 
-	private int row;
+	private int row; //encapsulamento
 	private int column;
+	
+	//construtores
 	public Position(int row, int column) {
 		this.row = row;
 		this.column = column;
@@ -22,7 +24,7 @@ public class Position {
 	}
 	
 	@Override
-	public String toString() {
+	public String toString() { //ToString - a classe object é a super classe
 		return row + ", " + column;
 	}
 	
