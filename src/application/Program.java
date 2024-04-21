@@ -35,10 +35,9 @@ public class Program {
 				
 				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 				
-				if(captured != null) {
+				if(capturedPiece != null) {
 					captured.add(capturedPiece);
 				}
-				
 			}
 			catch(ChessException e) {
 				System.out.println(e.getMessage());
